@@ -2,24 +2,31 @@
 <head>
 
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-
+  <title>Royal Mandarin Express</title>
   <link href="/static/pub.css" rel="stylesheet" type="text/css" />
   <script src = "/static/jquery.js" type="text/javascript"></script>
   <script src = "/static/airport.js" type="text/javascript"></script>
   <script src = "/static/menu.json" type="text/javascript"></script>
   <script type="text/javascript">
- 
+
 
   function displayMenu()
   {
     var item = menu.name[Math.floor(Math.random()*menu.name.length)];
-    document.getElementById("demo").innerHTML="<p>" + item + "<p>"
-    
+    $(demo).ready(function() {update();});
+
+    function update() { 
+      $(  demo  ).airport(["777"]);
+      setTimeout(update, 10000);}
+  
+    document.getElementById("demo").innerHTML="<p>" + item + "<p>";
   }
+
   </script>
 
+
 </head>
-<body>
+<body id = "orange">
 
   
   <!-- <h2>Royal Mandarin Express</h2> -->
@@ -27,19 +34,20 @@
   <h1>What to Eat?</h1>
   <p id="demo">Hit Choose and I will give u the result!</p>
   
+  
   <a id="btn-wrap" onclick="displayMenu()">
     <span class="title">Choose</span>
       <div id="info">
         <p>
-          <strong>just a pick</strong>
-          <span>happy everyday</span>
+          <strong>wish u</strong>
+          <span>good luck</span>
         </p>
       </div>
     </a>
 
   <p id="ads">This is a paragraph.</p>
   <script type="text/javascript">
-  $(  ads  ).airport(["not decided","asd"]);
+  $(  ads  ).airport(["www.zhihaoni.com","Royal-Mandarin-Express","rose-hulman","Love Terre Haute"]);
   </script>
 
 </body>

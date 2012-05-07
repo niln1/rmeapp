@@ -1,16 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-::selection {
-    background-color: #55595c;
-    color: #fff;
-    text-shadow: 0 1px 0 #000;
-}
-::-moz-selection {
-    background-color: #55595c;
-    color: #fff;
-    text-shadow: 0 1px 0 #000;
-}
 
 @font-face {
   font-family: 'BebasNeueRegular';
@@ -66,14 +56,17 @@ body {
   top: 1px;
 }
 
-
-#wrap {
-  width:500px;
-  margin:13% auto 0;
+body#orange {
+  color: #fef4e9;
+  background: #f78d1d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+  background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
 }
 
+
 h1{
-  color:#7c7c84;
+  color:#821111;
   font: bold 55px/19px Arial, Helvetica, san serif;
   margin-top:1cm;
 }
@@ -167,16 +160,4 @@ span.title{
   text-align:left;
 }
 
-.boxtuffs {
-  color: #7c7c84;
-  font:12px Helvetica, Arial, sans-serif;
-  text-shadow: 0  -1px 0 #000;
-  text-decoration:none;
-  -webkit-transition:all .2s ease-out;
-  -moz-transition:all .2s ease-out;
-  -o-transition:all .2s ease-out;
-}
 
-.boxtuffs:hover {
-  color: #27896a;
-}

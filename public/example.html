@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Text Animation</title>
+<style>
+body { font-size: 12px; font-family: Arial, Helvetica, sans-serif; background-color: #E9E9E9;}
+td { font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
+td.desc { font-style: italic; }
+input { border: 1px solid #aaa; padding-left: 3px; }
+.text_wrapper { height: 30px; width: 500px; margin: 0 auto; border: 2px solid #222222; padding: 10px; }
+.code { font-family: Courier; }
+</style>
+
+<script type="text/javascript" src="./static/jquery.js"></script>
+<script type="text/javascript" src="./static/textanimation.js"></script>
+</head>
+<body>
+<h1>jQuery Text Animation</h1>
+
+<table cellpadding="3">
+	<tr>
+		<td>Animation time</td>
+		<td><input type="text" name="random_implosion_timer" value="1500" /></td>
+		<td class="desc">animation duration (in miliseconds)</td>
+	</tr>
+	<tr>
+		<td>Font start</td>
+		<td><input type="text" name="random_implosion_font_start" value="56px" /></td>
+		<td class="desc">font size when animation starts</td>
+	</tr>
+	<tr>
+		<td>Font end</td>
+		<td><input type="text" name="random_implosion_font_end" value="18px" /></td>
+		<td class="desc">font size when animation ends</td>
+	</tr>
+	<tr>
+		<td>Radius</td>
+		<td><input type="text" name="random_implosion_radius" value="300" /></td>
+		<td class="desc">the explosion radius - how far the characters will explode (in px)</td>
+	</tr>		
+</table>
+
+<input type="button" value="Fire effect" id="fire_random_implosion"/>
+<div class="code" id="code_random_implosion">&nbsp;</div>
+<div class="text_wrapper">
+	<div id="text_random_implosion">Random implosion</div>
+</div>
+<hr />
+
+
+
+</body>
+</html>
