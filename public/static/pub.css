@@ -74,16 +74,18 @@ body {
 
 h1{
   color:#7c7c84;
-  font: bold 22px/19px Arial, Helvetica, san serif;
-  margin-top:2cm;
+  font: bold 55px/19px Arial, Helvetica, san serif;
+  margin-top:1cm;
 }
 h2{
   margin-top:1cm;
 }
 
 p#demo {
+  margin-top:1cm;
   color:#fff;
-  font: 30px/58px "BebasNeueRegular", Helvetica, Arial, sans-serif;
+  font:30px/58px "BebasNeueRegular", Helvetica, Arial, sans-serif;
+  
 }
 
 
