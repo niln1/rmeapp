@@ -4,6 +4,7 @@ server "66.228.45.15", :web, :app, :db, primary: true
 
 set :application, "rmeapp"
 set :user, "niz"
+set :admin_runner, "niz"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, true
