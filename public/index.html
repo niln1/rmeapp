@@ -13,13 +13,8 @@
   function displayMenu()
   {
     var item = menu.name[Math.floor(Math.random()*menu.name.length)];
-    $(demo).ready(function() {update();});
-
-    function update() { 
-      $(  demo  ).airport(["777"]);
-      setTimeout(update, 10000);}
   
-    document.getElementById("demo").innerHTML="<p>" + item + "<p>";
+    document.getElementById("demo").innerHTML="<p>" + item + "<p>"+"<p> Dont like it? Choose again!<p>";
   }
 
   </script>
